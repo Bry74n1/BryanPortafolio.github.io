@@ -53,15 +53,16 @@
 								</ul>
 								<p>Esta base de datos tenia nombre del doctor, area de especialidad, consultas, ingresos, denuncias y pago final por arrendamiento (todos esto de manera mensual), ya que en el hospital el mes anterior
 									se acordo un modelo independiente en el cada doctor aportaria parte de sus ingresos por medio de diferentes factores, con el fin de hacer pagos de mantenimiento,
-									campañas de marketing entre otras cosas.
+									campañas de marketing entre otras cosas.<br>
 									Al recibir la base de datos, primero me dispuse a limpiarlos, busque asegurarme que hubiera Exactitud, Coherencia, Validez y Uniformidad, para mi sorpresa la informacion cumplia casi en su totalidad con esto
-									simplemente eliminando valores duplicados, esto deja un total de 630 doctores y 54 especialidades diferentes.
-									Mi enfoque primordial fue las cantidades de consulta fueran tan altos asi que me dispuse a investigar los tiempos promedios de consulta en un hospital es entre 10 y 15 minutos esto se considera un tiempo insuficiente para hacer una consulta apropiada
+									simplemente eliminando valores duplicados, esto deja un total de <b>630 doctores y 54 especialidades diferentes</b>.<br><br>
+									Mi enfoque primordial fue las cantidades de consulta fueran tan altos asi que me dispuse a investigar los tiempos promedios de consulta, resulta que estos rondan los 10 a 15 minutos esto se considera un tiempo insuficiente para hacer una consulta apropiada
 									pero es lo comun en la industria, asumiendo que en promedio duran 12.5 minutos cada consulta y trabajan 8 horas diaras durante 25 dias da alrededor de 960 consultas por mes sin contemplar por nada mas que consultas
-									asi que me dispuse a preguntar a los doctores de dicho hospital y resulta que cada doctor llega a estar mas de 10 horas diaras, considerando esto como nuestro horas diaras nos da un promedio de 1200 consultas al mes,
-									a este cualquier cantidad de horas para alcanzar la cantidad de consultas me parece demasiado, para clarificar si esto era debido a casos individuales o si estas especialidades se encontraban en una mayor demanda comparada con los demas,
-									despues de agrupar los datos por area de especializacion, decidi graficar las cantidad de consultas por area de especializacion resulto que la mayoria de estos eran casos puntuales o una mala distribucion de la demanda laboral, pero al hacer esto
-									aparecieron varias especialidades que excedene el promedio de consultas de 960-1200, debido a la alta existencia de consultas se entiendo que hay una demanda mayor de esto en comparacion con otras areas.</p>
+									asi que me dispuse a preguntar a los doctores de dicho hospital y el tiempo que trabajan puede ser <b>mas de 10 horas diaras</b>, considerando esto como nuestro horas diaras nos da un promedio de 1200 consultas al mes.<br>
+									Considerando que hay doctores que hacen hasta <b>1500 consultas al mes</b>, en estos casos se esta comprometiendo la calidad del diagnostico y la calidad del doctor como persona al trabajar tantas horas, para clarificar si esto era debido a casos individuales o 
+									si estas especialidades se encontraban en una mayor demanda comparada con los demas, despues de agrupar los datos por area de especializacion, decidi graficar las cantidad de consultas por area de especializacion 
+									resultando que la mayoria de estos eran casos puntuales o una mala distribucion de la demanda laboral, pero al hacer esto
+									aparecieron varias especialidades que excedene el promedio de consultas de <b>960-1200</b>, debido a la alta existencia de consultas se entiendo que hay una demanda mayor de estas especialidades en comparacion con otras.<br><br>Estas siendo:</p>
 								<ol>
 									<li>Ortopedia y traumatología</li>
 									<li>Medicina de rehabilitación</li>
@@ -69,12 +70,12 @@
 									<li>Medicina Nuclear</li>
 									<li>Medicina Crítica</li>
 								</ol>
-								<p>Aunque estas sean las especialidades que trabajan mas horas, a su vez 3 de ellas no cuentan con un personal mayor a dos personas, asi que no se ocuparia un gran incremento para esta mejora, pero serian los primeros a priorizar.</p>
+								<p>Un detalle a mantener en cuenta es que aunque estas sean las especialidades que trabajan mas horas, a su vez 3 de ellas no cuentan con un personal mayor a dos personas, asi que no se ocuparia un gran incremento para esta mejora, pero serian los primeros a priorizar.</p>
 								<p>Despues analice las denuncias que se habian hecho durante el mes, lo maximo que esto llego fueron a 25 durante un mes, me quise asegurar de igual manera si estos son casos puntuales o tiene algo en particular esas especialidades
-									, decide de agruparlo y graficarlo por especialidades, parecia que la mayoria que quedo en las partes altas eran especialidades con poco numero de doctores, la unica que tenia varias fue Gaestroenterologia, conto con 23 doctores y un promedio de 14 denuncias al mes,
+									, decidi agruparlos y graficarlo por especialidades, parecia que la mayoria que quedo en las partes altas eran especialidades con poco numero de doctores, la unica que tenia varias fue Gaestroenterologia, son 23 doctores con un promedio de 14 denuncias al mes,
 								pero el detalle de esto es que estas denuncias no son registradas con un porque, asi que resulta bastante complicado sacar algun tipo de conclusiones con informacion parcial, lo unico seguro es que el numero es bastante elevado
-								se sugiere tomar reporte de los motivos de que estas consultas son archivadas.</p>
-								<p>Las denuncias pueden ser divididas de la siguiente manera:</p>
+								se sugiere registrar los motivos de las denuncias.</p>
+								<p>Las denuncias pueden ser por muchas razones, pero en general caen en estas categorias:</p>
 								<ul>
 									<li>Espera prolongada</li>
 									<li>Descuido de la atención al paciente</li>
@@ -82,9 +83,11 @@
 									<li>Falta de productos en stock</li>
 									<li>Paciente repite el problema varias veces</li>
 								</ul>
-								<p>Esto ayudaria enormemente a poder identificar de donde particularmente viene la mayoria de las demandas y evitar estos problemas.</p>
-								<p>Antes de analizar los ingresos del hospital, queria analizar el ultimo dato que prodia ayudarnos para el tema del Marketing, la plantilla laboral con la que cuenta el hospital para poder reconocer con que es lo que trabajamos,
-									grafique de manera descendiente el numero de trabajadores de cada especialidad,al ver que las 5 especialidades con mayor doctores era el 25% del hospital es mucho, estos son:</p>
+								<p>Esto ayudaria enormemente a poder identificar de donde provienen la mayoria de las demandas y evitar estos problemas.</p>
+								<p>Antes de analizar los ingresos del hospital, queria analizar el ultimo dato que prodia ayudarnos para el tema del Marketing, la plantilla laboral con la que cuenta el hospital para poder reconocer como esta compuesta el personal del hospital,
+									grafique de manera descendiente el numero de trabajadores de cada especialidad, al hacer esto se aprecia que las 5 especialidades con mayor cantidad de doctores contaba el 25% del personal del hospital.<br>
+									Si todos las areas tuvieran esta cantidad de doctores, 630 doctores fueran alrededor de 20 especialidades siendo que hay alrededor de 50 especialidades, seria cortar el numero de especialidades por mas de un 50%, estas siendo:
+								</p>
 								<ol>
 									<li>Medicina Interna</li>
 									<li>Inmunología</li>
@@ -92,16 +95,17 @@
 									<li>Cardiología</li>
 									<li>Pediatría</li>
 								</ol>
-								<p>Si todos las areas tuvieran este ritmo, fueran alrededor de 20 especialidades siendo que hay alrededor de 50 especialidades, seria cortar el numero de especialidades por mas de un 50%
-									asi que me dispuse a buscar que similitudes tenian estas 5 especialidades, despues de darle un poco de vueltas y pedir opinion de los hospitales del mismo hospital, identificamos que estas se enfocan en diagnosticos y prevenciones de enfermedades generales
+								<p>Claramente una duda me surgio que tenian estas 5 especialidades en comun, despues de investigar y preguntar identificamos que estas se enfocan en diagnosticos y prevenciones de enfermedades generales
 									en contraste de aquellas que buscan curar y/o tratar enfermedades ya existentes, en base a esto seria pertinente que el siguiente enfoque en la camapaña de marketing seria prevenir e identificar enfermedades para dar a entender que el Hospital "Colima" cuenta 
-									con buenas capacidades para encargarse de estos casos.
+									con las capacidades para encargarse de estos casos con soltura.
 								</p>
-								<p>Por ultimo el dato que podria ser el mas interesante en mi opinion son los fondos recaudados con por el hospital en todo el mes y en base a los detalles anteriores hay alguna sugerencia en lo que se podria hacer devido esto, se me informo que cada uno de los consultorios y detalles estan valuados 
-									en un alrededor de 1 millon de pesos mexicanos y usan alrededor del 15 al 20 porciento de sus ingresos totales en campañas de marketing y presentacion para el hospital, despues necesitaba separar una cantidad fija para contemplar en caso de alguna emergencia o gasto imprevisto, unos calculos sencillos y 
-									se puede llegar  a construir un maximo de 45 consultorios, esto es sin contemplar espacios o complicaciones que prodian llegar a suceder, asi que la cantidad a la hora de la practica puede llegar a ser menor a esta.
+								<p>Por ultimo el dato que podria ser el mas interesante en mi opinion son los fondos recaudados por el hospital en el lapso de un mes, antes de analizar cual seria la mejor manera de usarlo, es necesario saber cuanto es esto, al hacer las cuentas las ganancias netas fueron de <b>$49,879,465.50 pesos mexicanos</b> 
+									ya que el hospital "Colima" tenia ya pensado ampliar sus instalaciones, el primer pensamiento fue construir mas consultorios, pero que tantos y si estos estuvieran enfocados a alguna especialidades en particular,
+									me dispuse hacer un analisis de mercado y hacer cotizaciones para construcciones como los consultorios del hospital "Colima", resultando que estas estan valuadas en alrededor de 1 millon de pesos mexicanos, el Hospital "Colima" usa alrededor del 15 al 20 porciento de sus ingresos totales en
+									campañas de marketing y presentacion para el hospital, tambien se necesitaba separar una cantidad fija para contemplaciones en caso de alguna emergencia o gasto imprevisto aparezca, unos calculos sencillos y 
+									se puede llegar  a construir un maximo de 45 consultorios, esto es sin contemplar espacios o complicaciones que prodian llegar a suceder, asi que la cantidad a la hora de la practica puede llegar a ser menor a este.
 								</p>
-								<p>La presentacion final para esto termino de la siguiente manera, junto con su excel y los graficos hechos en tableau (Junto con otros que no fueron de utilidad).</p>
+								<p>La presentacion final para esto termino de la siguiente manera.<br> Se adjuntan a su vez los graficos hechos en tableau (Junto con otros que no fueron de utilidad).</p>
 								<!--Aprender como funciona lo de las class para hacer responsivas por separadas las presentaciones-->
 								<iframe class="image featured" src="https://docs.google.com/presentation/d/e/2PACX-1vTtfo4AAwbHSH1vHEVHO2_LLDHPiIDIfteQpl0-yumL4SGmGIFhLT6ImsD91620Gg/embed?start=true&loop=true&delayms=30000" 
 								frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
